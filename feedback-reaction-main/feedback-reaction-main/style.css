@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #151515;
+}
+
+/* SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.albtechhh */
+
+/* SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.albtechhh */
+label {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+img {
+    width: 60px;
+    height: 60px;
+    opacity: .2;
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+}
+img:active { transform: scale(1.2); }
+
+#one:checked ~ label[for="one"] img,
+#two:checked ~ label[for="two"] img,
+#three:checked ~ label[for="three"] img,
+#four:checked ~ label[for="four"] img,
+#five:checked ~ label[for="five"] img {
+    opacity: 1;
+    animation: rotate 800ms linear;
+}
+@keyframes rotate {
+    from { transform: rotate(0) scale(1.2); }
+    to { transform: rotate(360deg) scale(1); }
+}
+input { display: none; }
+/* SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.albtechhh */
+
+/* SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.albtechhh */
